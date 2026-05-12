@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter";
+  --font-montserrat: "Montserrat";
+  color-scheme: light;
+  background: #f9f9f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f9f9f9;
+  color: #1a1c1c;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(227, 6, 19, 0.18);
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/10 bg-surface/70 shadow-glass backdrop-blur-[20px];
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 ease-premium hover:scale-[1.02] hover:shadow-glow;
+  }
+
+  .metallic-bg {
+    @apply bg-gradient-to-r from-[#e5e2e1] via-white to-[#e5e2e1];
+  }
+
+  .industrial-texture {
+    background-image: radial-gradient(#1a1c1c 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  .cinematic-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/20;
+  }
+}
