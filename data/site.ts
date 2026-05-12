@@ -51,7 +51,7 @@ export const images = {
   team:
     "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1600&q=85",
   cta:
-    "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=2400&q=85",
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuB2eC_KAP83PPYrihK-RQQL2kxsJSTKscacmZgLrZzNXxTCL0VCHv5zb4uTl_ElHoi9bTPEtjQv5ebtCCh7oPt9bP4SYR9S3c4xcoNkiA0gFVGTwocAWRURWC7YS7mEV98xZcUjkn_CGlSUIBJIJfTBsJ0YByxltyWBThcgzURcePCwOt_IMMGprlpZKcbuqa7Ys8VSQlyzD_TS2dHpmTVJ9m3ifRq0c_wf0-GAZHW4oeYKPGD-0ujMFRr-7afFI64cNPapWSeSXQAt",
   services:
     "https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&fit=crop&w=2200&q=85",
   projects:

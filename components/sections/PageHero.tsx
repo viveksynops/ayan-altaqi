@@ -29,7 +29,7 @@ export function PageHero({
           <h1 className="font-heading text-headline-h1-mobile text-white sm:text-headline-h1 lg:text-display-lg">
             {title}
           </h1>
-          <p className="mt-md max-w-2xl font-body text-body-lg text-white/82">{description}</p>
+          <p className="mt-md max-w-2xl font-body text-body-lg text-white">{description}</p>
           <div className="mt-lg flex flex-col gap-md sm:flex-row">
             <Button href={primaryHref}>{primaryLabel}</Button>
             <Button href="/services" variant="ghost">Explore Services</Button>
