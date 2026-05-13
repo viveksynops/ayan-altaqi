@@ -137,6 +137,41 @@ export const services = [
   }
 ];
 
+export const products = [
+  {
+    title: "Pipes",
+    image: "/products/pipes.webp"
+  },
+  {
+    title: "Fittings",
+    image: "/products/fittings.webp"
+  },
+  {
+    title: "Fasteners",
+    image: "/products/fasteners.jpg"
+  },
+  {
+    title: "Valves",
+    image: "/products/valves.webp"
+  },
+  {
+    title: "Commercial Steel",
+    image: "/products/commercial-steel.jpg"
+  },
+  {
+    title: "PVC & Sanitary Accessories",
+    image: "/products/pvc-sanitary-accessories.webp"
+  },
+  {
+    title: "JAECO Scaffolding",
+    image: "/products/jaeco-scaffolding.webp"
+  },
+  {
+    title: "Green Fence",
+    image: "/products/green-fence.png"
+  }
+];
+
 export const industries = [
   {
     slug: "oil-gas",
