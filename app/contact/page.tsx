@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { MotionWrapper } from "@/components/ui/MotionWrapper";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { contactMethods, images } from "@/data/site";
+import { contactPeople, images } from "@/data/site";
 import { createMetadata } from "@/lib/utils";
 
 export const metadata: Metadata = createMetadata({
@@ -26,21 +26,20 @@ export default function ContactPage() {
             <ContactForm />
           </div>
           <aside className="space-y-md">
-            {contactMethods.map((method) => {
-              const Icon = method.icon;
-              return (
-                <MotionWrapper key={method.label} className="glass-panel rounded-xl bg-white/80 p-md">
-                  <Icon className="mb-sm h-7 w-7 text-primary" />
-                  <p className="font-body text-label-sm font-bold uppercase tracking-[0.12em] text-secondary">{method.label}</p>
-                  <h3 className="mt-xs font-heading text-headline-h3">{method.value}</h3>
-                </MotionWrapper>
-              );
-            })}
+            {contactPeople.map((person) => (
+              <MotionWrapper key={person.name} className="glass-panel rounded-xl bg-white/80 p-md">
+                <p className="font-body text-label-sm font-bold uppercase tracking-[0.12em] text-primary">{person.role}</p>
+                <h3 className="mt-xs font-heading text-headline-h3">{person.name}</h3>
+                <a className="mt-sm block font-body text-body-md text-secondary transition-colors hover:text-primary" href={`tel:${person.phone.replace(/\s/g, "")}`}>
+                  {person.phone}
+                </a>
+              </MotionWrapper>
+            ))}
             <MotionWrapper className="rounded-xl bg-inverse-surface p-md text-white">
               <MessageCircle className="mb-sm h-7 w-7 text-inverse-primary" />
               <h3 className="font-heading text-headline-h3">WhatsApp Support</h3>
               <p className="mt-sm font-body text-white/75">For urgent procurement or site support, connect directly with the coordination desk.</p>
-              <Button href="https://wa.me/97412345678" className="mt-md" variant="metallic">Open WhatsApp</Button>
+              <Button href={`https://wa.me/${contactPeople[0].whatsapp}`} className="mt-md" variant="metallic">Open WhatsApp</Button>
             </MotionWrapper>
           </aside>
         </Container>

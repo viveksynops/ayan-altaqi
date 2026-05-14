@@ -156,14 +156,18 @@ export const products = [
   },
   {
     title: "Commercial Steel",
-    image: "/products/commercial-steel.jpg"
+    image: "/products/commerical-steel.webp"
+  },
+  {
+    title: "Structural Steels",
+    image: "/products/structural-steel.jpeg"
   },
   {
     title: "PVC & Sanitary Accessories",
     image: "/products/pvc-sanitary-accessories.webp"
   },
   {
-    title: "JAECO Scaffolding",
+    title: "Scaffolding",
     image: "/products/jaeco-scaffolding.webp"
   },
   {
@@ -301,8 +305,19 @@ export const careers = [
   { title: "Scaffolding Supervisor", type: "Full Time", location: "Project Sites", department: "Access Solutions" }
 ];
 
-export const contactMethods = [
-  { label: "Office", value: siteConfig.location, icon: MapPin },
-  { label: "Email", value: siteConfig.email, icon: Mail },
-  { label: "Phone", value: siteConfig.phone, icon: Phone }
+export const contactMethods = [];
+
+export const contactPeople = [
+  {
+    name: "Sheik Mujeeb Rahman",
+    role: "Business Development Executive",
+    phone: "+966 54 576 2332",
+    whatsapp: "966545762332"
+  },
+  {
+    name: "Muhammed Subin Hussain",
+    role: "General Manager",
+    phone: "055 085 1620",
+    whatsapp: "966550851620"
+  }
 ];

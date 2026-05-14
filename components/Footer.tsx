@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Globe2, Linkedin, Share2 } from "lucide-react";
-import { contactMethods, navLinks, siteConfig } from "@/data/site";
+import { contactPeople, navLinks, siteConfig } from "@/data/site";
 import { Container } from "./ui/Container";
 
 export function Footer() {
@@ -31,15 +31,15 @@ export function Footer() {
           <div>
             <h3 className="mb-md font-heading text-body-lg font-bold">Contact</h3>
             <ul className="grid gap-sm">
-              {contactMethods.map((method) => {
-                const Icon = method.icon;
-                return (
-                  <li key={method.label} className="flex items-center gap-base font-body text-on-surface-variant">
-                    <Icon aria-hidden className="h-5 w-5 text-primary" />
-                    <span>{method.value}</span>
-                  </li>
-                );
-              })}
+              {contactPeople.map((person) => (
+                <li key={person.name} className="font-body text-on-surface-variant">
+                  <span className="block font-semibold text-on-surface">{person.name}</span>
+                  <span className="block text-sm">{person.role}</span>
+                  <Link className="text-sm transition-colors hover:text-primary" href={`tel:${person.phone.replace(/\s/g, "")}`}>
+                    {person.phone}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>

@@ -1,8 +1,15 @@
 import Image from "next/image";
+import { CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { MotionWrapper } from "@/components/ui/MotionWrapper";
 import { images } from "@/data/site";
+
+const aboutPoints = [
+  "Dynamically engineer value-focused supply chains.",
+  "Strategically optimize client-centric material sourcing.",
+  "Empowering transformative partnerships through excellence."
+];
 
 export function AboutPreview() {
   return (
@@ -11,12 +18,25 @@ export function AboutPreview() {
       <Container className="relative z-10">
         <div className="grid grid-cols-1 items-center gap-lg lg:grid-cols-2">
           <MotionWrapper>
-            <h2 className="mb-md font-heading text-headline-h2 text-primary">About Us</h2>
-            <p className="font-body text-body-lg text-secondary">
-              AYAN ALTAQI Trading & Contracting is a premier provider of comprehensive industrial solutions across the GCC region, dedicated to engineering excellence and uncompromising reliability. By integrating global supply chain capabilities with localized expertise, we deliver high-stakes enterprise and governmental projects with absolute precision, robust safety standards, and sustainable practices.
+            <p className="mb-sm font-body text-label-sm font-bold uppercase tracking-[0.08em] text-primary">
+              ← About Our Company →
             </p>
+            <h2 className="max-w-[720px] font-heading text-[36px] font-bold leading-[1.18] text-on-surface md:text-[46px] lg:text-[52px]">
+              Dedicated To Providing Top-Notch Service
+            </h2>
+            <p className="mt-md max-w-[760px] font-body text-[17px] leading-8 text-secondary md:text-body-lg">
+              AYAN ALTAQI is a leading industrial materials supplier, delivering reliable, high-quality materials for critical projects across sectors. Our extensive offerings, sourced from top global manufacturers, meet strict industry standards, ensuring optimal performance and durability.
+            </p>
+            <ul className="mt-md space-y-sm">
+              {aboutPoints.map((point) => (
+                <li key={point} className="flex items-start gap-sm font-body text-[17px] leading-8 text-on-surface md:text-body-md">
+                  <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 fill-primary text-white" />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
             <div className="mt-lg">
-              <Button href="/about" variant="dark">Company Profile</Button>
+              <Button href="/about" className="rounded-none px-lg py-md">Explore More</Button>
             </div>
           </MotionWrapper>
           <MotionWrapper delay={0.15}>
