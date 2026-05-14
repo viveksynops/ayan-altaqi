@@ -44,8 +44,7 @@ export const navLinks = [
 ];
 
 export const images = {
-  hero:
-    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2400&q=85",
+  hero: "/images/hero.png",
   about:
     "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1600&q=85",
   team:
