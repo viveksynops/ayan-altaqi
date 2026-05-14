@@ -151,6 +151,54 @@ export const products = [
     image: "/products/fasteners.jpg"
   },
   {
+    title: "Bolt",
+    image: "/products/bolt.webp"
+  },
+  {
+    title: "Screw",
+    image: "/products/screw.jpg"
+  },
+  {
+    title: "Nut",
+    image: "/products/nuts.jpg"
+  },
+  {
+    title: "Key",
+    image: "/products/key.webp"
+  },
+  {
+    title: "Stud",
+    image: "/products/stud.webp"
+  },
+  {
+    title: "Rivet",
+    image: "/products/rivet.jpg"
+  },
+  {
+    title: "Anchor",
+    image: "/products/anchor.jpg"
+  },
+  {
+    title: "Nail",
+    image: "/products/nail.webp"
+  },
+  {
+    title: "Insert",
+    image: "/products/insert.webp"
+  },
+  {
+    title: "Retain Ring",
+    image: "/products/retail.jpg"
+  },
+  {
+    title: "Washer",
+    image: "/products/washer.webp"
+  },
+  {
+    title: "Clevis",
+    image: "/products/clevis.webp"
+  },
+  {
     title: "Valves",
     image: "/products/valves.webp"
   },
@@ -161,6 +209,70 @@ export const products = [
   {
     title: "Structural Steels",
     image: "/products/structural-steel.jpeg"
+  },
+  {
+    title: "MS Plates",
+    image: "/products/ms-plates.webp"
+  },
+  {
+    title: "Dipped GI Coils",
+    image: "/products/dipped-gi-coils.webp"
+  },
+  {
+    title: "Sheets",
+    image: "/products/sheets.webp"
+  },
+  {
+    title: "Grating",
+    image: "/products/grating.webp"
+  },
+  {
+    title: "Angles",
+    image: "/products/angles.webp"
+  },
+  {
+    title: "MS Round Bar",
+    image: "/products/ms-round-bar.webp"
+  },
+  {
+    title: "Flat Bars",
+    image: "/products/flat-bar.webp"
+  },
+  {
+    title: "U Beams",
+    image: "/products/u-beams.jpg"
+  },
+  {
+    title: "U Columns",
+    image: "/products/u-columns.webp"
+  },
+  {
+    title: "I Beams",
+    image: "/products/i-beams.webp"
+  },
+  {
+    title: "H Beams",
+    image: "/products/h-beams.webp"
+  },
+  {
+    title: "Channels",
+    image: "/products/channels.webp"
+  },
+  {
+    title: "Rib Steel Bars",
+    image: "/products/ribbed-bar.webp"
+  },
+  {
+    title: "Square Bars",
+    image: "/products/square-bar.webp"
+  },
+  {
+    title: "Unequal Angle",
+    image: "/products/unique-angle.webp"
+  },
+  {
+    title: "Chequer Plates",
+    image: "/products/chequered-plate.webp"
   },
   {
     title: "PVC & Sanitary Accessories",
