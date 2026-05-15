@@ -37,10 +37,16 @@ export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
+  { href: "/products/fasteners", label: "Products" },
   { href: "/projects", label: "Projects" },
   { href: "/industries", label: "Industries" },
   { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" }
+];
+
+export const productNavLinks = [
+  { href: "/products/fasteners", label: "Fasteners" },
+  { href: "/products/structural-items", label: "Structural Items" }
 ];
 
 export const images = {
@@ -150,6 +156,33 @@ export const products = [
     image: "/products/fasteners.jpg"
   },
   {
+    title: "Valves",
+    image: "/products/valves.webp"
+  },
+  {
+    title: "Commercial Steel",
+    image: "/products/commerical-steel.webp"
+  },
+  {
+    title: "Structural Steels",
+    image: "/products/structural-steel.jpeg"
+  },
+  {
+    title: "PVC & Sanitary Accessories",
+    image: "/products/pvc-sanitary-accessories.webp"
+  },
+  {
+    title: "Scaffolding",
+    image: "/products/jaeco-scaffolding.webp"
+  },
+  {
+    title: "Green Fence",
+    image: "/products/green-fence.png"
+  }
+];
+
+export const fastenerProducts = [
+  {
     title: "Bolt",
     image: "/products/bolt.webp"
   },
@@ -196,19 +229,10 @@ export const products = [
   {
     title: "Clevis",
     image: "/products/clevis.webp"
-  },
-  {
-    title: "Valves",
-    image: "/products/valves.webp"
-  },
-  {
-    title: "Commercial Steel",
-    image: "/products/commerical-steel.webp"
-  },
-  {
-    title: "Structural Steels",
-    image: "/products/structural-steel.jpeg"
-  },
+  }
+];
+
+export const structuralProducts = [
   {
     title: "MS Plates",
     image: "/products/ms-plates.webp"
@@ -272,18 +296,6 @@ export const products = [
   {
     title: "Chequer Plates",
     image: "/products/chequered-plate.webp"
-  },
-  {
-    title: "PVC & Sanitary Accessories",
-    image: "/products/pvc-sanitary-accessories.webp"
-  },
-  {
-    title: "Scaffolding",
-    image: "/products/jaeco-scaffolding.webp"
-  },
-  {
-    title: "Green Fence",
-    image: "/products/green-fence.png"
   }
 ];
 

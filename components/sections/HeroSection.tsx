@@ -10,6 +10,17 @@ import { images } from "@/data/site";
 
 const slides = [
   {
+    image: "/images/hero4.png",
+    title: (
+      <>
+        Huge Material Stock. Ready for Immediate Supply.
+        <span className="text-primary-container">Trusted Industrial Supply Solutions</span>
+      </>
+    ),
+    description:
+      "We are trusted stockists with a large warehouse and wide range of materials available in stock, ensuring fast delivery, reliable supply, and complete support for your project requirements.",
+  },
+  {
     image: images.hero,
     title: (
       <>
@@ -19,7 +30,7 @@ const slides = [
       </>
     ),
     description:
-      "As a certified supplier, AYAN ALTAQI offers superior industrial materials and equipment to meet the diverse needs of industries across Saudi Arabia, backed by strong partnerships with world-trusted manufacturers."
+      "As a certified supplier, AYAN ALTAQI offers superior industrial materials and equipment to meet the diverse needs of industries across Saudi Arabia, backed by strong partnerships with world-trusted manufacturers.",
   },
   {
     image: "/images/hero2.png",
@@ -30,7 +41,7 @@ const slides = [
       </>
     ),
     description:
-      "For more than two decades, AYAN ALTAQI delivers certified high-quality industrial materials tailored for the oil and gas, petrochemical, and infrastructure sectors, ensuring quality, reliability, and unmatched performance."
+      "For more than two decades, AYAN ALTAQI delivers certified high-quality industrial materials tailored for the oil and gas, petrochemical, and infrastructure sectors, ensuring quality, reliability, and unmatched performance.",
   },
   {
     image: "/images/hero3.png",
@@ -42,8 +53,8 @@ const slides = [
       </>
     ),
     description:
-      "AYAN ALTAQI provides top-tier industrial equipment and materials, ensuring durability and exceptional performance, making us a preferred choice for businesses seeking quality and reliability in Saudi Arabia's industrial landscape."
-  }
+      "AYAN ALTAQI provides top-tier industrial equipment and materials, ensuring durability and exceptional performance, making us a preferred choice for businesses seeking quality and reliability in Saudi Arabia's industrial landscape.",
+  },
 ];
 
 export function HeroSection() {
@@ -72,8 +83,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 1.04 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 1.02 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        >
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}>
           <Image
             src={slide.image}
             alt=""
@@ -97,8 +107,7 @@ export function HeroSection() {
             initial={{ opacity: 0, x: -34 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 24 }}
-            transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-          >
+            transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}>
             <h1 className="max-w-4xl font-heading text-[42px] font-bold leading-[1.15] text-white sm:text-[56px] lg:text-[64px]">
               {slide.title}
             </h1>
@@ -107,8 +116,7 @@ export function HeroSection() {
             </p>
             <Link
               href="/about"
-              className="mt-lg inline-flex min-h-[80px] items-center justify-center gap-md bg-primary px-lg font-heading text-body-lg font-bold uppercase text-white transition-all duration-300 hover:-translate-y-1 hover:bg-primary-container hover:shadow-glow"
-            >
+              className="mt-lg inline-flex min-h-[80px] items-center justify-center gap-md bg-primary px-lg font-heading text-body-lg font-bold uppercase text-white transition-all duration-300 hover:-translate-y-1 hover:bg-primary-container hover:shadow-glow">
               Read More
               <ArrowRight className="h-6 w-6" />
             </Link>

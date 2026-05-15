@@ -32,6 +32,8 @@ The brand direction is premium Gulf-region industrial enterprise: strong red bra
 - `/` Home
 - `/about` About
 - `/services` Services
+- `/products/fasteners` Fasteners
+- `/products/structural-items` Structural Items
 - `/projects` Projects
 - `/projects/[slug]` Project detail pages
 - `/industries` Industries
@@ -43,7 +45,7 @@ The brand direction is premium Gulf-region industrial enterprise: strong red bra
 
 - Hero slider with three industrial slides, auto-advance, vertical dots, and Read More CTA
 - About preview with heading, paragraph, checklist, and image
-- Products slider with auto motion and arrow controls
+- Products slider with broad product categories, auto motion, and arrow controls
 - Core services grid
 - Industries grid
 - Animated stats section
@@ -53,6 +55,7 @@ The brand direction is premium Gulf-region industrial enterprise: strong red bra
 
 - About: hero, overview, values/quality copy, Why AYAN, CTA
 - Services: hero, service detail cards, project process, industries supported, CTA
+- Products: Fasteners and Structural Items pages with responsive product grids
 - Projects: hero, filterable project explorer, modal previews, dynamic project detail pages
 - Industries: hero, sector cards, service fit grid, CTA
 - Careers: hero, culture/benefits, open positions, hiring process, application form
@@ -63,7 +66,7 @@ The brand direction is premium Gulf-region industrial enterprise: strong red bra
 
 - Layout: `Navbar`, `Footer`, `FloatingWhatsApp`
 - UI: `Container`, `Button`, `MotionWrapper`, `StaggerGroup`, `StaggerItem`, `SectionTitle`, `AnimatedCard`, `AnimatedCounter`
-- Sections: `HeroSection`, `AboutPreview`, `ProductsSection`, `ServicesGrid`, `IndustriesGrid`, `StatsSection`, `CtaBanner`, `PageHero`, `ProjectExplorer`, `ContactForm`
+- Sections: `HeroSection`, `AboutPreview`, `ProductsSection`, `ProductCategoryGrid`, `ServicesGrid`, `IndustriesGrid`, `StatsSection`, `CtaBanner`, `PageHero`, `ProjectExplorer`, `ContactForm`
 
 ## Animations and Interactions
 
@@ -74,12 +77,13 @@ The brand direction is premium Gulf-region industrial enterprise: strong red bra
 - Project filtering and modal preview animation
 - Animated numeric counters
 - Navbar scroll blur and mobile menu animation
+- Products navbar dropdown opens Fasteners and Structural Items category routes
 - Hover image zoom and red glow card effects
 - Fixed WhatsApp shortcut opens the configured `wa.me` contact link
 
 ## Current Task
 
-Maintain the current AYAN ALTAQI website as a polished corporate industrial site. Recent focus has been Home hero carousel, products slider, About page content, contact details, WhatsApp access, and product catalog expansion.
+Maintain the current AYAN ALTAQI website as a polished corporate industrial site. Recent focus has been Home hero carousel, shorter products slider, Products dropdown navigation, Fasteners and Structural Items category pages, contact details, and WhatsApp access.
 
 ## Future Tasks
 
@@ -89,7 +93,7 @@ Maintain the current AYAN ALTAQI website as a polished corporate industrial site
 - Add real project case studies and replace dummy project data.
 - Add metadata images/OpenGraph image assets under `public`.
 - Add accessibility QA for carousel controls, focus states, and contrast.
-- Add product categories or filtering if the product slider becomes too long.
+- Add more product category routes if the catalog expands beyond Fasteners and Structural Items.
 - Add automated tests or at least route smoke tests.
 
 ## UI/UX Consistency Rules
@@ -107,5 +111,5 @@ Maintain the current AYAN ALTAQI website as a polished corporate industrial site
 ## Next Recommended Tasks
 
 - Replace remote background images for About, Services, Projects, Industries, Careers, and Contact with reliable local assets.
-- Convert product data to include categories for product slider grouping.
+- Add typed product category metadata for broader catalog management.
 - Wire form submissions to a real endpoint.

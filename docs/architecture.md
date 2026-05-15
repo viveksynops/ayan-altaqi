@@ -22,6 +22,8 @@ This is a Next.js 15 App Router website for AYAN ALTAQI Trading & Contracting. I
 - `/`: Home page composed from reusable sections.
 - `/about`: Corporate profile and overview page.
 - `/services`: Services overview with detailed service cards.
+- `/products/fasteners`: Fastener product category page.
+- `/products/structural-items`: Structural steel product category page.
 - `/projects`: Filterable project showcase.
 - `/projects/[slug]`: Static project detail pages generated from `projects` data.
 - `/industries`: Industry coverage page.
@@ -35,7 +37,7 @@ Dynamic route generation is handled by `generateStaticParams` in `app/projects/[
 
 Layout-level components:
 
-- `Navbar`: fixed glass navigation, active route highlighting, mobile menu.
+- `Navbar`: fixed glass navigation, active route highlighting, Products dropdown, mobile menu.
 - `Footer`: brand area, quick links, named contact details, social links.
 - `FloatingWhatsApp`: fixed bottom-right WhatsApp action mounted in the root layout.
 
@@ -44,6 +46,7 @@ Section-level components:
 - `HeroSection`: Home carousel.
 - `PageHero`: reusable route hero.
 - `ProductsSection`: product carousel.
+- `ProductCategoryGrid`: reusable product category card grid for product pages.
 - `ServicesGrid`, `IndustriesGrid`, `StatsSection`, `CtaBanner`, `AboutPreview`, `ProjectExplorer`, `ContactForm`.
 
 UI primitives:
@@ -114,7 +117,10 @@ CSS/Tailwind animation is used for:
 - `navLinks`
 - `images`
 - `services`
+- `productNavLinks`
 - `products`
+- `fastenerProducts`
+- `structuralProducts`
 - `industries`
 - `stats`
 - `values`
@@ -123,6 +129,8 @@ CSS/Tailwind animation is used for:
 - `contactPeople`
 
 This keeps page components mostly declarative and allows future CMS migration.
+
+The Home product carousel uses `products` for broad product categories only. Detailed Fasteners and Structural Items lists are stored separately in `fastenerProducts` and `structuralProducts`, and are rendered on their own product category pages.
 
 Brand logo paths are also defined in `siteConfig`:
 
@@ -149,6 +157,6 @@ $env:NEXT_PRIVATE_BUILD_WORKER='0'; npm run build
 ## Next Recommended Tasks
 
 - Replace remaining remote images with local files.
-- Introduce typed product categories.
+- Add typed product category metadata if more product groups are introduced.
 - Connect forms to real persistence or notification workflow.
 - Add automated route smoke tests.

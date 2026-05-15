@@ -14,6 +14,7 @@ Notes:
 - Logo source comes from `siteConfig.logo`.
 - Current navbar logo is the local transparent asset `/logo/logo.png`.
 - The logo is rendered as a small standalone lockup, matching the compact reference treatment.
+- Products is a desktop hover/focus dropdown with Fasteners and Structural Items links, and a nested mobile submenu.
 
 ### `Footer`
 
@@ -128,8 +129,21 @@ Features:
 
 Notes:
 
-- The product list is long and may need category grouping.
+- The Home carousel uses broad product categories only.
+- Detailed fastener and structural steel items were moved to dedicated product category pages.
 - Several product images are local and ready; final business review still recommended.
+
+### `ProductCategoryGrid`
+
+Purpose: Reusable product card grid for category pages.
+
+Used by: `app/products/fasteners/page.tsx`, `app/products/structural-items/page.tsx`
+
+Features:
+
+- Uses `SectionTitle`, `MotionWrapper`, `StaggerGroup`, and `StaggerItem`.
+- Renders local product images in a responsive card grid.
+- Consumes `fastenerProducts` or `structuralProducts` from `data/site.ts`.
 
 ### `ServicesGrid`
 
@@ -208,7 +222,7 @@ Notes:
 
 ## Component Improvement Suggestions
 
-- Add a `ProductCard` component if products are reused outside Home.
+- Add a `ProductCard` component if product cards need richer shared behavior across Home and category pages.
 - Move product descriptions into `data/site.ts`.
 - Add a reusable `ContactPersonCard`.
 - Add a reusable `DarkFeatureSection` for dark image/overlay sections.

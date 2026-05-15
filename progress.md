@@ -12,7 +12,10 @@ The project is functional and builds successfully as a Next.js 15 App Router sit
 - Custom Tailwind theme matching the original industrial red/gray brand palette.
 - Home hero converted to a three-slide carousel.
 - Home products section converted to an animated slider.
-- Product catalog expanded with pipes, fittings, fasteners, valves, steel items, scaffolding, fence, PVC/sanitary accessories, and fastener subtypes.
+- Home product catalog keeps broad categories: pipes, fittings, fasteners, valves, steel items, scaffolding, fence, and PVC/sanitary accessories.
+- Fastener subtypes moved to `/products/fasteners`.
+- Structural steel items moved to `/products/structural-items`.
+- Navbar Products item added with Fasteners and Structural Items dropdown links.
 - About page rebuilt with industrial supplier content and AYAN brand styling.
 - Named contacts added for Business Development Executive and General Manager.
 - Generic placeholder contact details removed from rendered contact blocks.
@@ -44,6 +47,7 @@ The project is functional and builds successfully as a Next.js 15 App Router sit
 - `app/contact/page.tsx`: map placeholder text exists.
 - `components/sections/ContactForm.tsx`: demo submission message exists.
 - `components/FloatingWhatsApp.tsx`: WhatsApp shortcut currently uses `contactPeople[0]`; change contact order or component selection if the preferred primary WhatsApp contact changes.
+- `data/site.ts`: product category pages are currently limited to Fasteners and Structural Items.
 - Several product and project texts are practical placeholders and may need final business copy.
 
 ## Known Issues
@@ -56,7 +60,7 @@ The project is functional and builds successfully as a Next.js 15 App Router sit
 ## Improvement Suggestions
 
 - Make remaining critical hero/background assets local.
-- Add product grouping: Fasteners, Structural Steel, Pipes/Fittings, Access/Fencing, PVC/Sanitary.
+- Add more product grouping pages if Pipes/Fittings, Access/Fencing, or PVC/Sanitary need dedicated catalog views.
 - Replace project dummy data with actual completed projects.
 - Add schema.org organization structured data.
 - Add aria-live or pause behavior for auto-advancing sliders if accessibility requirements increase.
@@ -66,4 +70,4 @@ The project is functional and builds successfully as a Next.js 15 App Router sit
 
 - Connect `ContactForm` to a server action, API route, or external form service.
 - Replace remaining remote images with local files.
-- Review product list order and decide whether all subtypes should appear in the main Home slider.
+- Review category page product order and labels with final business stakeholders.
