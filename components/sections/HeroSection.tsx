@@ -1,48 +1,134 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { Button } from "@/components/ui/Button";
+import Link from "next/link";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { images } from "@/data/site";
 
+const slides = [
+  {
+    image: images.hero,
+    title: (
+      <>
+        Approved Supplier Of Premium{" "}
+        <span className="text-primary-container">Industrial Materials</span> In{" "}
+        <span className="text-primary-container">Saudi Arabia</span>
+      </>
+    ),
+    description:
+      "As a certified supplier, AYAN ALTAQI offers superior industrial materials and equipment to meet the diverse needs of industries across Saudi Arabia, backed by strong partnerships with world-trusted manufacturers."
+  },
+  {
+    image: "/images/hero2.png",
+    title: (
+      <>
+        Empowering Saudi Industry With Trusted Materials For Over{" "}
+        <span className="text-primary-container">20 Years</span>
+      </>
+    ),
+    description:
+      "For more than two decades, AYAN ALTAQI delivers certified high-quality industrial materials tailored for the oil and gas, petrochemical, and infrastructure sectors, ensuring quality, reliability, and unmatched performance."
+  },
+  {
+    image: "/images/hero3.png",
+    title: (
+      <>
+        Delivering Excellence In{" "}
+        <span className="text-primary-container">Industrial Equipment</span> And{" "}
+        <span className="text-primary-container">Materials Supply</span>
+      </>
+    ),
+    description:
+      "AYAN ALTAQI provides top-tier industrial equipment and materials, ensuring durability and exceptional performance, making us a preferred choice for businesses seeking quality and reliability in Saudi Arabia's industrial landscape."
+  }
+];
+
 export function HeroSection() {
+  const [active, setActive] = useState(0);
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 700], [0, 120]);
   const opacity = useTransform(scrollY, [0, 560], [1, 0.35]);
 
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActive((current) => (current + 1) % slides.length);
+    }, 5000);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  const slide = slides[active];
+
   return (
-    <section className="relative flex h-screen min-h-[720px] items-center justify-center overflow-hidden">
-      <motion.div className="absolute inset-0" style={{ y, opacity }}>
-        <Image src={images.hero} alt="Modern industrial construction site at dawn" fill priority sizes="100vw" className="object-cover" />
-      </motion.div>
-      <div className="absolute inset-0 bg-on-surface/70" />
-      <div className="absolute left-[8%] top-[20%] h-32 w-32 rounded-full border border-primary/30 opacity-60 animate-float" />
-      <div className="absolute bottom-[14%] right-[10%] h-24 w-24 rounded-full border border-white/20 opacity-50 animate-float" />
-      <Container className="relative z-10 mt-xl text-center">
+    <section className="relative flex h-screen min-h-[720px] items-center overflow-hidden bg-inverse-surface">
+      <AnimatePresence mode="wait">
         <motion.div
-          className="mx-auto max-w-[820px]"
-          initial={{ opacity: 0, y: 42, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1.05, ease: [0.16, 1, 0.3, 1] }}
+          key={active}
+          className="absolute inset-0"
+          style={{ y, opacity }}
+          initial={{ opacity: 0, scale: 1.04 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 1.02 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h1 className="font-heading text-headline-h1-mobile text-white sm:text-headline-h1 lg:text-display-lg">
-            Reliable Trading & Contracting Solutions
-          </h1>
-          <p className="mx-auto mt-md max-w-3xl font-body text-body-lg text-surface-container-highest">
-            Partnering for industrial excellence across the Gulf region with precision, scale, and uncompromising quality.
-          </p>
-          <motion.div
-            className="mt-lg flex flex-col justify-center gap-md sm:flex-row"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.28, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <Button href="/services">Our Services</Button>
-            <Button href="/contact" variant="metallic">Contact Us</Button>
-          </motion.div>
+          <Image
+            src={slide.image}
+            alt=""
+            fill
+            priority={active === 0}
+            sizes="100vw"
+            className="object-cover"
+          />
         </motion.div>
+      </AnimatePresence>
+
+      <div className="absolute inset-0 bg-black/58" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#07101d]/95 via-[#07101d]/58 to-transparent" />
+      <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-black/20 to-transparent" />
+
+      <Container className="relative z-10 pt-24">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={`content-${active}`}
+            className="max-w-5xl text-left"
+            initial={{ opacity: 0, x: -34 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 24 }}
+            transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <h1 className="max-w-4xl font-heading text-[42px] font-bold leading-[1.15] text-white sm:text-[56px] lg:text-[64px]">
+              {slide.title}
+            </h1>
+            <p className="mt-lg max-w-4xl font-body text-[19px] font-semibold leading-9 text-white md:text-[22px]">
+              {slide.description}
+            </p>
+            <Link
+              href="/about"
+              className="mt-lg inline-flex min-h-[80px] items-center justify-center gap-md bg-primary px-lg font-heading text-body-lg font-bold uppercase text-white transition-all duration-300 hover:-translate-y-1 hover:bg-primary-container hover:shadow-glow"
+            >
+              Read More
+              <ArrowRight className="h-6 w-6" />
+            </Link>
+          </motion.div>
+        </AnimatePresence>
       </Container>
+
+      <div className="absolute right-md top-1/2 z-20 flex -translate-y-1/2 flex-col gap-sm">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            aria-label={`Go to hero slide ${index + 1}`}
+            className={`h-5 w-5 rounded-full border-2 border-white transition-all duration-300 ${
+              active === index ? "bg-white" : "bg-transparent"
+            }`}
+            onClick={() => setActive(index)}
+          />
+        ))}
+      </div>
     </section>
   );
 }
