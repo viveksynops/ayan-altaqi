@@ -13,8 +13,8 @@ const slides = [
     image: "/images/hero4.png",
     title: (
       <>
-        Huge Material Stock. Ready for Immediate Supply.
-        <span className="text-primary-container">Trusted Industrial Supply Solutions</span>
+        Huge Material Stock.
+        <span className="text-primary-container"> Ready for Immediate Supply.</span>
       </>
     ),
     description:
