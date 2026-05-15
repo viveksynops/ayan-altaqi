@@ -29,8 +29,8 @@ export const siteConfig = {
   tagline: "Reliable | Professional | Committed",
   description:
     "Premium trading and contracting solutions for industrial, infrastructure, governmental, and enterprise projects across the Gulf region.",
-  logo:
-    "https://lh3.googleusercontent.com/aida/ADBb0uiJ8xUyF8qSxtEL1AzcLqPBPJm6qlym-uFv2npiIOunON-2k-6wZWCA9h4Nh8_49NEAPOtojLx9qBl6VPPu0jhajkLsDVyRq4yMXdcAGBTWxv011TNSmnNXkFwFzzw4MXwxptESVXBGu8w4DojdJI1x6uep_9EXES3P9G2AUJvlXx63xRmf5koeSNYXK_loVO9GuDeI0h8vXNgzDHa1TD-aUeaPTaVJdivVTUP-YZWOJrd6cvUZmeD1l3mjsQN6PghkpUsAHx4uiUk"
+  logo: "/logo/logo.png",
+  footerLogo: "/logo/logo.png"
 };
 
 export const navLinks = [

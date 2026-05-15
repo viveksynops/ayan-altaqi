@@ -34,8 +34,8 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-container-max items-center justify-between px-gutter py-4">
-        <Link href="/" aria-label="AYAN ALTAQI home" className="relative z-10">
-          <Image src={siteConfig.logo} alt="AYAN ALTAQI" width={190} height={72} priority className="h-[72px] w-auto object-contain" />
+        <Link href="/" aria-label="AYAN ALTAQI home" className="relative z-10 block">
+          <Image src={siteConfig.logo} alt="AYAN ALTAQI" width={82} height={82} priority className="h-[72px] w-[72px] object-contain md:h-[82px] md:w-[82px]" />
         </Link>
         <nav className="hidden items-center gap-md md:flex" aria-label="Primary navigation">
           {navLinks.map((link) => {

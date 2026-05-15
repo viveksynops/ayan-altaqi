@@ -10,7 +10,7 @@ export function Footer() {
       <Container className="px-0">
         <div className="grid gap-lg md:grid-cols-4">
           <div className="flex flex-col gap-md">
-            <Image src={siteConfig.logo} alt="AYAN ALTAQI Logo" width={170} height={64} className="h-16 w-auto object-contain object-left" />
+            <Image src={siteConfig.footerLogo} alt="AYAN ALTAQI Logo" width={120} height={120} className="h-24 w-24 object-contain" />
             <div>
               <h2 className="font-heading text-body-lg font-bold text-on-surface">{siteConfig.name}</h2>
               <p className="mt-xs font-body text-sm uppercase tracking-wider text-secondary">{siteConfig.tagline}</p>
