@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Globe2, Linkedin, Share2 } from "lucide-react";
-import { contactPeople, navLinks, siteConfig } from "@/data/site";
+import { Globe2, Linkedin, MapPin, Share2 } from "lucide-react";
+import { contactPeople, navLinks, officeAddress, siteConfig } from "@/data/site";
 import { Container } from "./ui/Container";
 
 export function Footer() {
@@ -30,16 +30,29 @@ export function Footer() {
           </div>
           <div>
             <h3 className="mb-md font-heading text-body-lg font-bold">Contact</h3>
-            <ul className="grid gap-sm">
+            <ul className="grid gap-3">
               {contactPeople.map((person) => (
-                <li key={person.name} className="font-body text-on-surface-variant">
-                  <span className="block font-semibold text-on-surface">{person.name}</span>
-                  <span className="block text-sm">{person.role}</span>
-                  <Link className="text-sm transition-colors hover:text-primary" href={`tel:${person.phone.replace(/\s/g, "")}`}>
+                <li key={person.name} className="border-l-2 border-primary/35 pl-3 font-body">
+                  <span className="block font-heading text-[15px] font-bold leading-5 text-on-surface">{person.name}</span>
+                  <span className="mt-1 block text-sm leading-5 text-secondary">{person.role}</span>
+                  <Link className="mt-1 block text-sm font-medium leading-5 text-on-surface-variant transition-colors hover:text-primary" href={`tel:${person.phone.replace(/\s/g, "")}`}>
                     {person.phone}
                   </Link>
                 </li>
               ))}
+              <li className="rounded-md border border-outline-variant/30 bg-white/35 p-3 font-body">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    <MapPin className="h-4 w-4" />
+                  </span>
+                  <span className="font-heading text-[15px] font-bold leading-5 text-on-surface">{officeAddress.label}</span>
+                </div>
+                <address className="mt-2 not-italic text-sm leading-6 text-on-surface-variant">
+                  {officeAddress.lines.map((line) => (
+                    <span key={line} className="block">{line}</span>
+                  ))}
+                </address>
+              </li>
             </ul>
           </div>
           <div>

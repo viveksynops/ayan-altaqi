@@ -430,6 +430,11 @@ export const careers = [
 
 export const contactMethods = [];
 
+export const officeAddress = {
+  label: "Saudi Arabia Office",
+  lines: ["Ar Rabi, 8187", "Dammam 32241", "Kingdom of Saudi Arabia"]
+};
+
 export const contactPeople = [
   {
     name: "Sheik Mujeeb Rahman",

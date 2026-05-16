@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { MessageCircle } from "lucide-react";
+import { MapPin, MessageCircle } from "lucide-react";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { PageHero } from "@/components/sections/PageHero";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { MotionWrapper } from "@/components/ui/MotionWrapper";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { contactPeople, images } from "@/data/site";
+import { contactPeople, images, officeAddress } from "@/data/site";
 import { createMetadata } from "@/lib/utils";
 
 export const metadata: Metadata = createMetadata({
@@ -35,6 +35,15 @@ export default function ContactPage() {
                 </a>
               </MotionWrapper>
             ))}
+            <MotionWrapper className="glass-panel rounded-xl bg-white/80 p-md">
+              <MapPin className="mb-sm h-7 w-7 text-primary" />
+              <p className="font-body text-label-sm font-bold uppercase tracking-[0.12em] text-primary">{officeAddress.label}</p>
+              <address className="mt-sm not-italic font-body text-body-md leading-7 text-secondary">
+                {officeAddress.lines.map((line) => (
+                  <span key={line} className="block">{line}</span>
+                ))}
+              </address>
+            </MotionWrapper>
             <MotionWrapper className="rounded-xl bg-inverse-surface p-md text-white">
               <MessageCircle className="mb-sm h-7 w-7 text-inverse-primary" />
               <h3 className="font-heading text-headline-h3">WhatsApp Support</h3>
@@ -46,12 +55,17 @@ export default function ContactPage() {
       </section>
       <section className="bg-surface py-xl">
         <Container>
-          <SectionTitle eyebrow="Location" title="Doha Office" />
+          <SectionTitle eyebrow="Location" title={officeAddress.label} />
           <MotionWrapper className="relative overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-high p-lg text-center shadow-sm">
             <div className="industrial-texture absolute inset-0 opacity-[0.06]" />
             <div className="relative z-10">
               <p className="font-body text-body-lg text-secondary">Embedded map placeholder for production integration.</p>
-              <h3 className="mt-sm font-heading text-headline-h2 text-primary">Doha, Qatar</h3>
+              <h3 className="mt-sm font-heading text-headline-h2 text-primary">Dammam, Saudi Arabia</h3>
+              <address className="mt-sm not-italic font-body text-body-lg leading-8 text-secondary">
+                {officeAddress.lines.map((line) => (
+                  <span key={line} className="block">{line}</span>
+                ))}
+              </address>
             </div>
           </MotionWrapper>
         </Container>
