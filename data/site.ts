@@ -16,7 +16,7 @@ import {
   Sparkles,
   Truck,
   Users,
-  Wrench
+  Wrench,
 } from "lucide-react";
 
 export const siteConfig = {
@@ -30,7 +30,7 @@ export const siteConfig = {
   description:
     "Premium trading and contracting solutions for industrial, infrastructure, governmental, and enterprise projects across the Gulf region.",
   logo: "/logo/logo.png",
-  footerLogo: "/logo/logo.png"
+  footerLogo: "/logo/logo.png",
 };
 
 export const navLinks = [
@@ -41,22 +41,20 @@ export const navLinks = [
   { href: "/projects", label: "Projects" },
   { href: "/industries", label: "Industries" },
   { href: "/careers", label: "Careers" },
-  { href: "/contact", label: "Contact" }
+  { href: "/contact", label: "Contact" },
 ];
 
 export const productNavLinks = [
   { href: "/products/fasteners", label: "Fasteners" },
-  { href: "/products/structural-items", label: "Structural Items" }
+  { href: "/products/structural-items", label: "Structural Items" },
 ];
 
 export const images = {
   hero: "/images/hero.png",
   about:
     "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1600&q=85",
-  team:
-    "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1600&q=85",
-  cta:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuB2eC_KAP83PPYrihK-RQQL2kxsJSTKscacmZgLrZzNXxTCL0VCHv5zb4uTl_ElHoi9bTPEtjQv5ebtCCh7oPt9bP4SYR9S3c4xcoNkiA0gFVGTwocAWRURWC7YS7mEV98xZcUjkn_CGlSUIBJIJfTBsJ0YByxltyWBThcgzURcePCwOt_IMMGprlpZKcbuqa7Ys8VSQlyzD_TS2dHpmTVJ9m3ifRq0c_wf0-GAZHW4oeYKPGD-0ujMFRr-7afFI64cNPapWSeSXQAt",
+  team: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1600&q=85",
+  cta: "https://lh3.googleusercontent.com/aida-public/AB6AXuB2eC_KAP83PPYrihK-RQQL2kxsJSTKscacmZgLrZzNXxTCL0VCHv5zb4uTl_ElHoi9bTPEtjQv5ebtCCh7oPt9bP4SYR9S3c4xcoNkiA0gFVGTwocAWRURWC7YS7mEV98xZcUjkn_CGlSUIBJIJfTBsJ0YByxltyWBThcgzURcePCwOt_IMMGprlpZKcbuqa7Ys8VSQlyzD_TS2dHpmTVJ9m3ifRq0c_wf0-GAZHW4oeYKPGD-0ujMFRr-7afFI64cNPapWSeSXQAt",
   services:
     "https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&fit=crop&w=2200&q=85",
   projects:
@@ -64,239 +62,249 @@ export const images = {
   careers:
     "https://images.unsplash.com/photo-1581091870622-1e7e4e7b877b?auto=format&fit=crop&w=2200&q=85",
   contact:
-    "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=2200&q=85"
+    "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=2200&q=85",
 };
 
 export const services = [
   {
     slug: "mechanical-civil-fire-fighting",
     title: "Mechanical, Civil & Fire Fighting",
-    description: "Comprehensive engineering and construction services for industrial infrastructure.",
+    description:
+      "Comprehensive engineering and construction services for industrial infrastructure.",
     icon: Flame,
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85",
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85",
     details:
-      "Integrated mechanical works, civil execution, fire protection systems, site coordination, testing, commissioning, and handover support for demanding industrial environments."
+      "Integrated mechanical works, civil execution, fire protection systems, site coordination, testing, commissioning, and handover support for demanding industrial environments.",
   },
   {
     slug: "human-resource-support",
     title: "Human Resource Support Services",
     description: "Providing skilled and unskilled manpower tailored to meet your project demands.",
     icon: Users,
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=85",
+    image:
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=85",
     details:
-      "Qualified technical manpower, workforce planning, mobilization support, project staffing, and compliance-led personnel management for enterprise projects."
+      "Qualified technical manpower, workforce planning, mobilization support, project staffing, and compliance-led personnel management for enterprise projects.",
   },
   {
     slug: "vehicle-equipment-rental",
     title: "Vehicle & Equipment Rental",
     description: "A wide fleet of industrial vehicles and heavy machinery for diverse operations.",
     icon: Truck,
-    image: "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?auto=format&fit=crop&w=1200&q=85",
+    image:
+      "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?auto=format&fit=crop&w=1200&q=85",
     details:
-      "Reliable access to project vehicles, lifting equipment, earthmoving machinery, logistics assets, operators, and maintenance-backed rental programs."
+      "Reliable access to project vehicles, lifting equipment, earthmoving machinery, logistics assets, operators, and maintenance-backed rental programs.",
   },
   {
     slug: "scaffolding-access",
     title: "Scaffolding & Access Solutions",
     description: "Certified scaffolding systems ensuring safety and accessibility on-site.",
     icon: Building2,
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85",
+    image:
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85",
     details:
-      "Design, erection, inspection, modification, and dismantling of certified scaffolding and access systems for complex site conditions."
+      "Design, erection, inspection, modification, and dismantling of certified scaffolding and access systems for complex site conditions.",
   },
   {
     slug: "sand-blasting-painting",
     title: "Sand Blasting & Painting",
     description: "Expert surface preparation and coating services for durability and protection.",
     icon: Sparkles,
-    image: "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&fit=crop&w=1200&q=85",
+    image:
+      "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&fit=crop&w=1200&q=85",
     details:
-      "Industrial blasting, coating, corrosion protection, repainting, quality control, and finish systems for steel, tanks, structures, and equipment."
+      "Industrial blasting, coating, corrosion protection, repainting, quality control, and finish systems for steel, tanks, structures, and equipment.",
   },
   {
     slug: "material-trading",
     title: "Material Trading",
     description: "Supply of high-grade industrial materials sourced from a global network.",
     icon: Ship,
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=85",
+    image:
+      "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=85",
     details:
-      "Procurement and delivery of certified construction, MEP, civil, safety, and industrial materials through a controlled supplier network."
+      "Procurement and delivery of certified construction, MEP, civil, safety, and industrial materials through a controlled supplier network.",
   },
   {
     slug: "industrial-maintenance",
     title: "Industrial Maintenance Services",
     description: "Dedicated maintenance solutions to ensure operational longevity and efficiency.",
     icon: Wrench,
-    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1200&q=85",
+    image:
+      "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1200&q=85",
     details:
-      "Preventive, corrective, and shutdown maintenance programs for plants, facilities, mechanical systems, utilities, and mission-critical operations."
+      "Preventive, corrective, and shutdown maintenance programs for plants, facilities, mechanical systems, utilities, and mission-critical operations.",
   },
   {
     slug: "procurement-supply-chain",
     title: "Procurement & Supply Chain Solutions",
-    description: "Streamlined procurement processes and supply chain management for complex projects.",
+    description:
+      "Streamlined procurement processes and supply chain management for complex projects.",
     icon: Handshake,
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
+    image:
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
     details:
-      "Vendor management, sourcing, expediting, logistics coordination, document control, and supply visibility for time-sensitive project delivery."
-  }
+      "Vendor management, sourcing, expediting, logistics coordination, document control, and supply visibility for time-sensitive project delivery.",
+  },
 ];
 
 export const products = [
   {
     title: "Pipes",
-    image: "/products/pipes.webp"
+    image: "/products/pipes.webp",
   },
   {
     title: "Fittings",
-    image: "/products/fittings.webp"
+    image: "/products/fittings.webp",
   },
   {
     title: "Fasteners",
-    image: "/products/fasteners.jpg"
+    image: "/products/fasteners.jpg",
   },
   {
     title: "Valves",
-    image: "/products/valves.webp"
+    image: "/products/valves.webp",
   },
   {
     title: "Commercial Steel",
-    image: "/products/commerical-steel.webp"
+    image: "/products/commerical-steel.webp",
   },
   {
     title: "Structural Steels",
-    image: "/products/structural-steel.jpeg"
+    image: "/products/structural-steel.jpeg",
   },
   {
     title: "PVC & Sanitary Accessories",
-    image: "/products/pvc-sanitary-accessories.webp"
+    image: "/products/pvc-sanitary-accessories.webp",
   },
   {
     title: "Scaffolding",
-    image: "/products/jaeco-scaffolding.webp"
+    image: "/products/jaeco-scaffolding.webp",
   },
   {
     title: "Green Fence",
-    image: "/products/green-fence.png"
-  }
+    image: "/products/green-fence.png",
+  },
 ];
 
 export const fastenerProducts = [
   {
     title: "Bolt",
-    image: "/products/bolt.webp"
+    image: "/products/bolt.webp",
   },
   {
     title: "Screw",
-    image: "/products/screw.jpg"
+    image: "/products/screw.jpg",
   },
   {
     title: "Nut",
-    image: "/products/nuts.jpg"
+    image: "/products/nuts.jpg",
   },
   {
     title: "Key",
-    image: "/products/key.webp"
+    image: "/products/key.webp",
   },
   {
     title: "Stud",
-    image: "/products/stud.webp"
+    image: "/products/stud.webp",
   },
   {
     title: "Rivet",
-    image: "/products/rivet.jpg"
+    image: "/products/rivet.jpg",
   },
   {
     title: "Anchor",
-    image: "/products/anchor.jpg"
+    image: "/products/anchor.jpg",
   },
   {
     title: "Nail",
-    image: "/products/nail.webp"
+    image: "/products/nail.webp",
   },
   {
     title: "Insert",
-    image: "/products/insert.webp"
+    image: "/products/insert.webp",
   },
   {
     title: "Retain Ring",
-    image: "/products/retail.jpg"
+    image: "/products/retail.jpg",
   },
   {
     title: "Washer",
-    image: "/products/washer.webp"
+    image: "/products/washer.webp",
   },
   {
     title: "Clevis",
-    image: "/products/clevis.webp"
-  }
+    image: "/products/clevis.webp",
+  },
 ];
 
 export const structuralProducts = [
   {
     title: "MS Plates",
-    image: "/products/ms-plates.webp"
+    image: "/products/ms-plates.webp",
   },
   {
     title: "Dipped GI Coils",
-    image: "/products/dipped-gi-coils.webp"
+    image: "/products/dipped-gi-coils.webp",
   },
   {
     title: "Sheets",
-    image: "/products/sheets.webp"
+    image: "/products/sheets.webp",
   },
   {
     title: "Grating",
-    image: "/products/grating.webp"
+    image: "/products/grating.webp",
   },
   {
     title: "Angles",
-    image: "/products/angles.webp"
+    image: "/products/angles.webp",
   },
   {
     title: "MS Round Bar",
-    image: "/products/ms-round-bar.webp"
+    image: "/products/ms-round-bar.webp",
   },
   {
     title: "Flat Bars",
-    image: "/products/flat-bar.webp"
+    image: "/products/flat-bar.webp",
   },
   {
     title: "U Beams",
-    image: "/products/u-beams.jpg"
+    image: "/products/u-beams.jpg",
   },
   {
     title: "U Columns",
-    image: "/products/u-columns.webp"
+    image: "/products/u-columns.webp",
   },
   {
     title: "I Beams",
-    image: "/products/i-beams.webp"
+    image: "/products/i-beams.webp",
   },
   {
     title: "H Beams",
-    image: "/products/h-beams.webp"
+    image: "/products/h-beams.webp",
   },
   {
     title: "Channels",
-    image: "/products/channels.webp"
+    image: "/products/channels.webp",
   },
   {
     title: "Rib Steel Bars",
-    image: "/products/ribbed-bar.webp"
+    image: "/products/ribbed-bar.webp",
   },
   {
     title: "Square Bars",
-    image: "/products/square-bar.webp"
+    image: "/products/square-bar.webp",
   },
   {
     title: "Unequal Angle",
-    image: "/products/unique-angle.webp"
+    image: "/products/unique-angle.webp",
   },
   {
     title: "Chequer Plates",
-    image: "/products/chequered-plate.webp"
-  }
+    image: "/products/chequered-plate.webp",
+  },
 ];
 
 export const industries = [
@@ -306,56 +314,76 @@ export const industries = [
     description: "Reliable support for upstream, downstream, and energy infrastructure operations.",
     icon: Fuel,
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD9Bf4X2Uk3QHgvycituzsilLsmNpRkebyUzBkYg_l-3EnpZ8RVYTgNy5JwHqH_b9TdOQK0hXM9Emst8dXn5R1aXtNXmZ62EQXF4BqWU_2jW4oIrYMRlSOkzaeopw7rZUkCXbcyIuvB0IxmwH1X1mkoBF17ZHZzm02TfncKwIch1RnY2fUS3ZQMM6fFH6JZVBVSIwXnRY4crMoZpcSzjk8x82tiFKOOW-prjmmxqbVQXJY1jNIIblnhbsRCmgZcjrTcd1dreSAyZnS6"
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD9Bf4X2Uk3QHgvycituzsilLsmNpRkebyUzBkYg_l-3EnpZ8RVYTgNy5JwHqH_b9TdOQK0hXM9Emst8dXn5R1aXtNXmZ62EQXF4BqWU_2jW4oIrYMRlSOkzaeopw7rZUkCXbcyIuvB0IxmwH1X1mkoBF17ZHZzm02TfncKwIch1RnY2fUS3ZQMM6fFH6JZVBVSIwXnRY4crMoZpcSzjk8x82tiFKOOW-prjmmxqbVQXJY1jNIIblnhbsRCmgZcjrTcd1dreSAyZnS6",
   },
   {
     slug: "petrochemicals",
     title: "Petrochemicals",
     description: "Specialized contracting, maintenance, and procurement for process facilities.",
     icon: Factory,
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=85"
+    image:
+      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=85",
   },
   {
     slug: "infrastructure-civil",
     title: "Infrastructure & Civil",
     description: "Construction, access, material, and resource support for built environments.",
     icon: HardHat,
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85"
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85",
   },
   {
     slug: "healthcare",
     title: "Healthcare",
     description: "Dependable facility, procurement, and contracting support for health assets.",
     icon: HeartPulse,
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85"
+    image:
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85",
   },
   {
     slug: "hospitality",
     title: "Hospitality",
     description: "Operational project support for hotels, venues, and premium destinations.",
     icon: Hotel,
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85"
+    image:
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
   },
   {
     slug: "it-telecom",
     title: "IT & Telecom",
     description: "Civil, access, logistics, and deployment support for connected infrastructure.",
     icon: RadioTower,
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=85"
-  }
+    image:
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=85",
+  },
 ];
 
 export const stats = [
   { value: 15, suffix: "+", label: "Years Experience" },
   { value: 300, suffix: "+", label: "Projects Completed" },
   { value: 50, suffix: "+", label: "Enterprise Clients" },
-  { value: 12, suffix: "", label: "Industries Served" }
+  { value: 12, suffix: "", label: "Industries Served" },
 ];
 
 export const values = [
-  { title: "Safety First", description: "Every project is planned around robust safety systems and disciplined site execution.", icon: ShieldCheck },
-  { title: "Precision Delivery", description: "Integrated teams, transparent reporting, and reliable procurement keep delivery under control.", icon: Sparkles },
-  { title: "Long-Term Trust", description: "We build operational relationships that continue beyond a single project handover.", icon: Handshake }
+  {
+    title: "Safety First",
+    description:
+      "Every project is planned around robust safety systems and disciplined site execution.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Precision Delivery",
+    description:
+      "Integrated teams, transparent reporting, and reliable procurement keep delivery under control.",
+    icon: Sparkles,
+  },
+  {
+    title: "Long-Term Trust",
+    description:
+      "We build operational relationships that continue beyond a single project handover.",
+    icon: Handshake,
+  },
 ];
 
 export const projects = [
@@ -365,9 +393,16 @@ export const projects = [
     category: "Oil & Gas",
     location: "Ras Laffan",
     year: "2025",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1400&q=85",
-    summary: "Shutdown maintenance, access systems, manpower, and material supply for an operating energy facility.",
-    scope: ["Industrial maintenance", "Scaffolding access", "Skilled manpower", "Certified materials"]
+    image:
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1400&q=85",
+    summary:
+      "Shutdown maintenance, access systems, manpower, and material supply for an operating energy facility.",
+    scope: [
+      "Industrial maintenance",
+      "Scaffolding access",
+      "Skilled manpower",
+      "Certified materials",
+    ],
   },
   {
     slug: "metro-civil-works",
@@ -375,9 +410,11 @@ export const projects = [
     category: "Infrastructure",
     location: "Doha",
     year: "2024",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85",
-    summary: "Civil execution support, equipment rental, logistics, and procurement for a transport infrastructure package.",
-    scope: ["Civil works", "Equipment rental", "Project logistics", "Procurement"]
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85",
+    summary:
+      "Civil execution support, equipment rental, logistics, and procurement for a transport infrastructure package.",
+    scope: ["Civil works", "Equipment rental", "Project logistics", "Procurement"],
   },
   {
     slug: "petrochemical-coating-upgrade",
@@ -385,9 +422,11 @@ export const projects = [
     category: "Petrochemicals",
     location: "Mesaieed",
     year: "2024",
-    image: "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&fit=crop&w=1400&q=85",
-    summary: "Surface preparation, blasting, coating, and QA documentation for high-corrosion industrial assets.",
-    scope: ["Sand blasting", "Protective coating", "QA documentation", "Site supervision"]
+    image:
+      "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&fit=crop&w=1400&q=85",
+    summary:
+      "Surface preparation, blasting, coating, and QA documentation for high-corrosion industrial assets.",
+    scope: ["Sand blasting", "Protective coating", "QA documentation", "Site supervision"],
   },
   {
     slug: "hospital-expansion-logistics",
@@ -395,9 +434,11 @@ export const projects = [
     category: "Healthcare",
     location: "Doha",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=85",
-    summary: "Supply chain, vehicle support, and controlled manpower services for a live healthcare expansion.",
-    scope: ["Supply chain", "Vehicle rental", "Manpower", "Site coordination"]
+    image:
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=85",
+    summary:
+      "Supply chain, vehicle support, and controlled manpower services for a live healthcare expansion.",
+    scope: ["Supply chain", "Vehicle rental", "Manpower", "Site coordination"],
   },
   {
     slug: "luxury-hotel-fitout-support",
@@ -405,9 +446,11 @@ export const projects = [
     category: "Hospitality",
     location: "West Bay",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=85",
-    summary: "Material trading, finishing support, access solutions, and delivery coordination for a premium hotel.",
-    scope: ["Material trading", "Access solutions", "Finishing support", "Delivery coordination"]
+    image:
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=85",
+    summary:
+      "Material trading, finishing support, access solutions, and delivery coordination for a premium hotel.",
+    scope: ["Material trading", "Access solutions", "Finishing support", "Delivery coordination"],
   },
   {
     slug: "telecom-tower-rollout",
@@ -415,24 +458,36 @@ export const projects = [
     category: "IT & Telecom",
     location: "Qatar",
     year: "2022",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=85",
-    summary: "Civil enabling works, equipment, and resource support for distributed telecom infrastructure.",
-    scope: ["Civil enabling", "Equipment rental", "Resource support", "Logistics"]
-  }
+    image:
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=85",
+    summary:
+      "Civil enabling works, equipment, and resource support for distributed telecom infrastructure.",
+    scope: ["Civil enabling", "Equipment rental", "Resource support", "Logistics"],
+  },
 ];
 
 export const careers = [
   { title: "Project Engineer", type: "Full Time", location: "Doha", department: "Operations" },
-  { title: "Procurement Coordinator", type: "Full Time", location: "Doha", department: "Supply Chain" },
+  {
+    title: "Procurement Coordinator",
+    type: "Full Time",
+    location: "Doha",
+    department: "Supply Chain",
+  },
   { title: "HSE Officer", type: "Contract", location: "Industrial Area", department: "Safety" },
-  { title: "Scaffolding Supervisor", type: "Full Time", location: "Project Sites", department: "Access Solutions" }
+  {
+    title: "Scaffolding Supervisor",
+    type: "Full Time",
+    location: "Project Sites",
+    department: "Access Solutions",
+  },
 ];
 
 export const contactMethods = [];
 
 export const officeAddress = {
   label: "Saudi Arabia Office",
-  lines: ["Ar Rabi, 8187", "Dammam 32241", "Kingdom of Saudi Arabia"]
+  lines: ["Ar Rabi, 8187", "Dammam 32241", "Kingdom of Saudi Arabia"],
 };
 
 export const contactPeople = [
@@ -440,12 +495,17 @@ export const contactPeople = [
     name: "Sheik Mujeeb Rahman",
     role: "Business Development Executive",
     phone: "+966 54 576 2332",
-    whatsapp: "966545762332"
+    whatsapp: "966545762332",
   },
   {
     name: "Muhammed Subin Hussain",
     role: "General Manager",
     phone: "055 085 1620",
-    whatsapp: "966550851620"
-  }
+    whatsapp: "966550851620",
+  },
 ];
+
+export const floatingWhatsappNumber = {
+  name: "Sheik Mujeeb Rahman",
+  whatsapp: "966596636786",
+};
